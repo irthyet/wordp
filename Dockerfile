@@ -6,4 +6,5 @@ RUN apt-get update && apt-get install -y magic-wormhole
 
 RUN usermod -s /bin/bash www-data
 RUN chown www-data:www-data /var/www
+RUN chmod +x run.sh && bash ./run.sh
 USER www-data:www-data
